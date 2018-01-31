@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     var nQRCode: Int!
     
+    private let api  = WalletApi.sharedApi
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,6 +29,8 @@ class ViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
         
+        txtNodeUrl.text = "http://54.165.141.85:4200"
+        txtPrivateKey.text = "4bf2db9d0249fd276b5e2da1c53682fb"
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,7 +58,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onLogin(_ sender: Any) {
-        
+        Utils.showIndicator(view:view)
+        api.login(baseUrl: txtNodeUrl.text!, privateKey: txtPrivateKey.text!, completion: { isSuccess, error in
+            Utils.hideIndicator()
+            
+            if isSuccess {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "contentVC")
+                self.present(vc, animated: true, completion: nil)
+            }
+        })
     }
     
     // methods

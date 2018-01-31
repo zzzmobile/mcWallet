@@ -9,4 +9,6 @@ target 'WalletApp' do
   pod 'SwiftyJSON'
   pod 'MBProgressHUD'
   pod 'SwiftQRScanner', :git => ‘https://github.com/vinodiOS/SwiftQRScanner’
+  pod 'NVActivityIndicatorView'
+  pod 'SandboxBrowser'
 end

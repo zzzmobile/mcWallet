@@ -8,23 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		15A529A2AC2965449073E588 /* Pods_WalletApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B80C59C9B063FF18D0810C /* Pods_WalletApp.framework */; };
+		C31C9ACE2011D2D4002C275C /* ReceivedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C9ACD2011D2D4002C275C /* ReceivedData.swift */; };
+		C31C9AD220152181002C275C /* PublishStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C9AD120152181002C275C /* PublishStreamViewController.swift */; };
+		C31C9AD420155472002C275C /* StreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C9AD320155472002C275C /* StreamTableViewCell.swift */; };
 		C34168CA200E6B410037275B /* ChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34168C9200E6B410037275B /* ChainViewController.swift */; };
+		C365B2D520194BFF00CB5EAE /* ChainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365B2D420194BFF00CB5EAE /* ChainData.swift */; };
+		C365B2D72019754D00CB5EAE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365B2D62019754D00CB5EAE /* Utils.swift */; };
+		C365B2D9201A4BE500CB5EAE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365B2D8201A4BE500CB5EAE /* ContentViewController.swift */; };
+		C3B3CDA0200FECB8009AF23B /* WalletApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3CD9F200FECB8009AF23B /* WalletApi.swift */; };
 		C3B7C5A41FE8F3C30056A9ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C5A31FE8F3C30056A9ED /* AppDelegate.swift */; };
 		C3B7C5A61FE8F3C30056A9ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C5A51FE8F3C30056A9ED /* ViewController.swift */; };
 		C3B7C5A91FE8F3C30056A9ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B7C5A71FE8F3C30056A9ED /* Main.storyboard */; };
 		C3B7C5AC1FE8F3C30056A9ED /* WalletApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C5AA1FE8F3C30056A9ED /* WalletApp.xcdatamodeld */; };
 		C3B7C5AE1FE8F3C30056A9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B7C5AD1FE8F3C30056A9ED /* Assets.xcassets */; };
 		C3B7C5B11FE8F3C30056A9ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B7C5AF1FE8F3C30056A9ED /* LaunchScreen.storyboard */; };
+		C3BD7B47201C7E1700083DEB /* PublishedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD7B46201C7E1700083DEB /* PublishedData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F0704E4BEDA3AFEB3053E23 /* Pods-WalletApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.release.xcconfig"; sourceTree = "<group>"; };
 		B63950D6458E6F6C3016C9B3 /* Pods-WalletApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B9B80C59C9B063FF18D0810C /* Pods_WalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31C9ACD2011D2D4002C275C /* ReceivedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReceivedData.swift; path = WalletApp/DataModel/ReceivedData.swift; sourceTree = SOURCE_ROOT; };
+		C31C9AD120152181002C275C /* PublishStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishStreamViewController.swift; sourceTree = "<group>"; };
+		C31C9AD320155472002C275C /* StreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StreamTableViewCell.swift; path = WalletApp/DataModel/StreamTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		C33B95E81FEAC2D400D6FDA5 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33B95EA1FEAC30200D6FDA5 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33B95EC1FEAC30800D6FDA5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34168C9200E6B410037275B /* ChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainViewController.swift; sourceTree = "<group>"; };
+		C365B2D420194BFF00CB5EAE /* ChainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChainData.swift; path = WalletApp/DataModel/ChainData.swift; sourceTree = SOURCE_ROOT; };
+		C365B2D62019754D00CB5EAE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C365B2D8201A4BE500CB5EAE /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		C3B3CD9F200FECB8009AF23B /* WalletApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalletApi.swift; path = Api/WalletApi.swift; sourceTree = "<group>"; };
 		C3B7C5A01FE8F3C30056A9ED /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B7C5A31FE8F3C30056A9ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3B7C5A51FE8F3C30056A9ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +48,7 @@
 		C3B7C5AD1FE8F3C30056A9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3B7C5B01FE8F3C30056A9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3B7C5B21FE8F3C30056A9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3BD7B46201C7E1700083DEB /* PublishedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PublishedData.swift; path = WalletApp/DataModel/PublishedData.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C31C9ACC2011D284002C275C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C365B2D420194BFF00CB5EAE /* ChainData.swift */,
+				C3BD7B46201C7E1700083DEB /* PublishedData.swift */,
+				C31C9ACD2011D2D4002C275C /* ReceivedData.swift */,
+				C31C9AD320155472002C275C /* StreamTableViewCell.swift */,
+			);
+			name = DataModel;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3B3CD9E200FEC8B009AF23B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C3B3CD9F200FECB8009AF23B /* WalletApi.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
 		C3B7C5971FE8F3C30056A9ED = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +115,14 @@
 		C3B7C5A21FE8F3C30056A9ED /* WalletApp */ = {
 			isa = PBXGroup;
 			children = (
+				C31C9ACC2011D284002C275C /* DataModel */,
+				C3B3CD9E200FEC8B009AF23B /* Api */,
 				C3B7C5A31FE8F3C30056A9ED /* AppDelegate.swift */,
 				C3B7C5A51FE8F3C30056A9ED /* ViewController.swift */,
 				C34168C9200E6B410037275B /* ChainViewController.swift */,
+				C365B2D8201A4BE500CB5EAE /* ContentViewController.swift */,
+				C31C9AD120152181002C275C /* PublishStreamViewController.swift */,
+				C365B2D62019754D00CB5EAE /* Utils.swift */,
 				C3B7C5A71FE8F3C30056A9ED /* Main.storyboard */,
 				C3B7C5AD1FE8F3C30056A9ED /* Assets.xcassets */,
 				C3B7C5AF1FE8F3C30056A9ED /* LaunchScreen.storyboard */,
@@ -195,6 +236,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SandboxBrowser/SandboxBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftQRScanner/SwiftQRScanner.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -202,6 +245,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SandboxBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftQRScanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -235,10 +280,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B3CDA0200FECB8009AF23B /* WalletApi.swift in Sources */,
+				C365B2D520194BFF00CB5EAE /* ChainData.swift in Sources */,
 				C3B7C5A61FE8F3C30056A9ED /* ViewController.swift in Sources */,
+				C31C9AD220152181002C275C /* PublishStreamViewController.swift in Sources */,
+				C3BD7B47201C7E1700083DEB /* PublishedData.swift in Sources */,
+				C365B2D9201A4BE500CB5EAE /* ContentViewController.swift in Sources */,
 				C3B7C5AC1FE8F3C30056A9ED /* WalletApp.xcdatamodeld in Sources */,
 				C34168CA200E6B410037275B /* ChainViewController.swift in Sources */,
+				C365B2D72019754D00CB5EAE /* Utils.swift in Sources */,
+				C31C9AD420155472002C275C /* StreamTableViewCell.swift in Sources */,
 				C3B7C5A41FE8F3C30056A9ED /* AppDelegate.swift in Sources */,
+				C31C9ACE2011D2D4002C275C /* ReceivedData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

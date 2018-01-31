@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D0280A50A7F32B2275A47F9973649530'
+               BlueprintIdentifier = 'ED760DAA7AEA7FCCABB534B2E4760A26'
                BlueprintName = 'SwiftQRScanner-SwiftQRScanner'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SwiftQRScanner.bundle'>
